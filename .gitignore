@@ -1,1 +1,6 @@
 .idea/
+*.exp
+*.lib
+*.obj
+*.pyd
+*.dll

@@ -1,9 +1,10 @@
 # coding=utf-8
 import os
+import great_module
 
 
 def main():
-    pass
+    print(great_module.great_function(1))
 
 
 if __name__ == '__main__':

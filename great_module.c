@@ -25,6 +25,15 @@ static PyMethodDef GreateModuleMethods[] = {
     {NULL, NULL, 0, NULL}
 };
 
+static struct PyModuleDef great_module = {
+    PyModuleDef_HEAD_INIT,
+    "great_module",   /* name of module */
+    NULL, /* module documentation, may be NULL */
+    -1,       /* size of per-interpreter state of the module,
+                or -1 if the module keeps state in global variables. */
+    GreateModuleMethods
+};
+
 PyMODINIT_FUNC PyInit_great_module(void) {
-    (void) PyModule_Create("great_module", GreateModuleMethods);
+    return PyModule_Create(&great_module);
 }
