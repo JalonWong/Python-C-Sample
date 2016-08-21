@@ -4,3 +4,6 @@
 *.obj
 *.pyd
 *.dll
+__pycache__
+swig/great_module.py
+swig/great_module_wrap.c
